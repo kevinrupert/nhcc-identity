@@ -1,0 +1,242 @@
+/* RESET http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "atlas";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/AtlasGrotesk-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AtlasGrotesk-Light.woff2") format("woff2"), url("../fonts/AtlasGrotesk-Light.woff") format("woff"), url("../fonts/AtlasGrotesk-Light.ttf") format("truetype"), url("../fonts/AtlasGrotesk-Light.svg#atlas") format("svg"); }
+@font-face {
+  font-family: "atlas";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/AtlasGrotesk-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AtlasGrotesk-Medium.woff2") format("woff2"), url("../fonts/AtlasGrotesk-Medium.woff") format("woff"), url("../fonts/AtlasGrotesk-Medium.ttf") format("truetype"), url("../fonts/AtlasGrotesk-Medium.svg#atlas") format("svg"); }
+@font-face {
+  font-family: "atlas-mono";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/AtlasTypewriter-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AtlasTypewriter-Regular.woff2") format("woff2"), url("../fonts/AtlasTypewriter-Regular.woff") format("woff"), url("../fonts/AtlasTypewriter-Regular.ttf") format("truetype"), url("../fonts/AtlasTypewriter-Regular.svg#atlas-mono") format("svg"); }
+html {
+  min-height: 100%;
+  width: 100%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "atlas", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 1;
+  color: #0D0D0D;
+  -webkit-font-smoothing: antialiased; }
+  body ::selection {
+    background: #0D0D0D;
+    color: #ffffff; }
+
+.mar-top-8 {
+  margin-top: 8px; }
+
+.mar-top-16 {
+  margin-top: 16px; }
+
+.mar-top-24 {
+  margin-top: 24px; }
+
+.mar-top-48 {
+  margin-top: 48px; }
+
+.mar-bot-8 {
+  margin-bottom: 8px; }
+
+.mar-bot-16 {
+  margin-bottom: 16px; }
+
+.mar-bot-24 {
+  margin-bottom: 24px; }
+
+.mar-bot-48 {
+  margin-bottom: 48px; }
+
+.title-2 {
+  font-size: 24px;
+  line-height: 42px; }
+
+.title-3 {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px; }
+
+.regular {
+  font-size: 18px;
+  line-height: 32px; }
+  @media (min-width: 700px) {
+    .regular {
+      font-size: 24px;
+      line-height: 42px; } }
+
+.mono {
+  font-family: "atlas-mono", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: rgba(13, 13, 13, 0.75); }
+
+.page-title {
+  background: #0D0D0D;
+  color: white;
+  padding: 24px;
+  box-sizing: border-box;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  @media (min-width: 800px) {
+    .page-title {
+      padding: 48px;
+      height: 200px; } }
+
+.text {
+  padding: 64px 24px;
+  box-sizing: border-box;
+  margin: 64px 0; }
+  @media (min-width: 800px) {
+    .text .container {
+      max-width: 700px; } }
+  @media (min-width: 800px) {
+    .text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 200px 0; } }
+
+.media {
+  margin-bottom: 64px; }
+  @media (min-width: 800px) {
+    .media {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 200px; }
+      .media.last {
+        margin-bottom: 64px; } }
+  @media (min-width: 800px) {
+    .media .grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1300px; } }
+  .media .grid .grid-item {
+    line-height: 0; }
+    .media .grid .grid-item:nth-child(2) {
+      margin-top: 8px; }
+      @media (min-width: 800px) {
+        .media .grid .grid-item:nth-child(2) {
+          margin-top: 0;
+          margin-left: 24px; } }
+    .media .grid .grid-item img, .media .grid .grid-item video {
+      width: 100%; }
+  .media .caption {
+    padding: 24px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px; }
+    .media .caption .container {
+      width: 100%; }
+      .media .caption .container .mono {
+        max-width: 450px; }
+
+.animate-fade {
+  opacity: 0;
+  transition: all 1s ease 0.5s; }
+  .animate-fade.delay-none {
+    transition-delay: 0s; }
+  .animate-fade.delay-1 {
+    transition-delay: 0.5s; }
+  .animate-fade.delay-2 {
+    transition-delay: 0.75s; }
+  .animate-fade.delay-3 {
+    transition-delay: 1s; }
+  .animate-fade.delay-4 {
+    transition-delay: 1.25s; }
+  .animate-fade.delay-5 {
+    transition-delay: 1.5s; }
+  .animate-fade.delay-6 {
+    transition-delay: 1.75s; }
+  .animate-fade.animated {
+    opacity: 1; }
+
+.animate-fade-grow {
+  opacity: 0;
+  width: 0;
+  transition: all 1s ease 0.5s; }
+  .animate-fade-grow.animated {
+    opacity: 1;
+    width: 100%; }
+
+.animate-fade-up {
+  transform: translateY(48px);
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.4, 0.01, 0.165, 0.99) 0.5s; }
+  .animate-fade-up.delay-none {
+    transition-delay: 0s; }
+  .animate-fade-up.delay-1 {
+    transition-delay: 0.5s; }
+  .animate-fade-up.delay-2 {
+    transition-delay: 0.75s; }
+  .animate-fade-up.delay-3 {
+    transition-delay: 1s; }
+  .animate-fade-up.delay-4 {
+    transition-delay: 1.25s; }
+  .animate-fade-up.delay-5 {
+    transition-delay: 1.5s; }
+  .animate-fade-up.delay-6 {
+    transition-delay: 1.75s; }
+  .animate-fade-up.animated {
+    transform: translateY(0px);
+    opacity: 1; }
+
+/*# sourceMappingURL=main.css.map */

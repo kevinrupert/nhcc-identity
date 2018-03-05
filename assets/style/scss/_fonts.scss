@@ -1,0 +1,5 @@
+@include font-face("atlas", "../fonts/AtlasGrotesk-Light", 100, normal, $file-formats: eot woff woff2);
+
+@include font-face("atlas", "../fonts/AtlasGrotesk-Medium", 500, normal, $file-formats: eot woff woff2);
+
+@include font-face("atlas-mono", "../fonts/AtlasTypewriter-Regular", 300, normal, $file-formats: eot woff woff2);
